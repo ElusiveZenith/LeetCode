@@ -1,5 +1,7 @@
-// LeetCode #624 
+// LeetCode #624 - Maximum Distance in Arrays
 // Date: 2024-08-16
+// Submission Status: Accepted
+// Note: 
 pub fn max_distance(arrays: Vec<Vec<i32>>) -> i32 {
     fn get_min_max(arrays: &Vec<Vec<i32>>, skip_index: Option<usize>) -> ((usize, i32), (usize, i32)) {
         let min = arrays.iter().enumerate().fold((0, i32::MAX), |acc, (i, x)| {
